@@ -26,3 +26,14 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+function addRandomFact() {
+    const facts =
+        ['I am fluent in English and Spanish.', 'I enjoy painting and creating art.', 'My favorite genres of music are: EDM, Reggaeton, & Indie', 'My first programming language was Java.'];
+  
+    // Pick a random greeting.
+    const fact = facts[Math.floor(Math.random() * facts.length)];
+  
+    // Add it to the page.
+    const factContainer = document.getElementById('greeting-container');
+    factContainer.innerText = fact;
+  }
