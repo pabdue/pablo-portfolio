@@ -2,14 +2,44 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Pablo's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <style>
+        body {
+            background-image: url('background-portfolio.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+    </style>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <h1 style="background-color: rgba(105, 105, 105, 0.26); text-align: center; color: black;"><b>Pablo Dueñas' Portfolio</b></h1>
+      <img src="pablo-photos.JPG" alt="Photos of Pablo" style="width:500px;height:500px">
+      <hr>
+      <h3 style="background-color: rgba(105, 105, 105, 0.26); text-align: center; color: black;"><i>About me:</i></h3>
+      <p id ="indent">My name is Pablo Dueñas, I am 21 years old, and I was born and raised in Los Angeles, California. I am an undergraduate student at California State 
+          Polytechnic University, Pomona majoring in Computer Science and minoring in Data Science. I am first-generation Mexican-American, 
+          first-generation college student, and a proud Angeleno. Growing up, I had always been fascinated by the evolution of technology and 
+          software. My first exposure to technology was in 2005 when my parents gifted me a Gameboy Advanced for Christmas. I was in awe as to 
+          how something so small could bring me such enjoyment. Flash forward to today, my dream is to become a software engineer and help improve 
+          the lives of many people through the power of code.</p>
+      <p id ="indent">As a child of immigrants from México, I carry a perspective that isn't very represented in the world of technology. 
+          I am able to empathize with the struggles many Latinos face while navigating the differences between their households and life in the United 
+          States. In the future, I would like to contribute back and create resources that will help Latinos and other marginalized groups improve their 
+          quality of life.</p>
+      <hr>
+      <h3 style="background-color: rgba(105, 105, 105, 0.26); text-align: center; color: black;"><i>Online profiles:</i></h3>
+      <p style="text-align: center;"><a href="https://www.linkedin.com/in/pduenas007/">LinkedIn</a>        <a href="https://github.com/pabdue">GitHub</a></p>
+      <hr>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
