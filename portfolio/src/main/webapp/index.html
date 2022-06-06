@@ -5,42 +5,37 @@
     <title>Pablo's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <style>
-        body {
-            background-image: url('background-portfolio.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 5%;
-        }
-    </style>
   </head>
-  <body> 
+  <body id="background"> 
     <div id="content">
       <h1 id="header"><b>Pablo Dueñas' Portfolio:</b></h3>
-      <img id="mainImage" src="pablo-photos.JPG" alt="Photos of Pablo" style="width:500px;height:500px">
+      <img id="mainImage" src="pablo-photos.JPG" alt="Photos of Pablo">
       <hr>
-      <h3 id="header"><i>About me &#128515;:</i></h3>
-      <p id ="indent">My name is Pablo Dueñas, I am 21 years old, and I was born and raised in Los Angeles, California. I am an undergraduate student at California State 
+      <h3 id="header"><i>About me</i> &#128515;:</h3>
+      <p style="text-indent: 40px;">My name is Pablo Dueñas, I am 21 years old, and I was born and raised in Los Angeles, California. I am an undergraduate student at California State 
           Polytechnic University, Pomona majoring in Computer Science and minoring in Data Science. I am first-generation Mexican-American, 
           first-generation college student, and a proud Angeleno. Growing up, I had always been fascinated by the evolution of technology and 
           software. My first exposure to technology was in 2005 when my parents gifted me a Gameboy Advanced for Christmas. I was in awe as to 
           how something so small could bring me such enjoyment. Flash forward to today, my dream is to become a software engineer and help improve 
           the lives of many people through the power of code.</p>
-      <p id ="indent">As a child of immigrants from México, I carry a perspective that isn't very represented in the world of technology. 
+      <p style="text-indent: 40px;">As a child of immigrants from México, I carry a perspective that isn't very represented in the world of technology. 
           I am able to empathize with the struggles many Latinos face while navigating the differences between their households and life in the United 
           States. In the future, I would like to contribute back and create resources that will help Latinos and other marginalized groups improve their 
           quality of life.</p>
       <hr>
-      <h3 id="header"><i>Online profiles &#128100;:</i></h3>
-      <p style="text-align: center;"><a href="https://www.linkedin.com/in/pduenas007/">LinkedIn</a>            <a href="https://github.com/pabdue">GitHub</a></p>
+      <h3 id="header"><i>Fun facts</i> &#128175;:</h3>      
+      <p>Click here to get a random <strong>fact</strong> about me: <button style="background-color: rgba(105, 105, 105, 0.205);" onclick="addRandomFact()">&#128272;</button></p>
+      <p> </p>
+      <div id="greeting-container"></div>
+      <p> </p>
       <hr>
-      <h3 id="header"><i>List of projects &#128195;:</i></h3>
+      <h3 id="header"><i>Online profiles</i> &#128100;:</h3>
+      <p style="text-align: center;">
+        <a href="https://www.linkedin.com/in/pduenas007/">LinkedIn</a>
+        <a href="https://github.com/pabdue">GitHub</a>
+      </p>
+      <hr>
+      <h3 id="header"><i>List of projects</i> &#128195;:</h3>
       <dl>
         <dt><b>Zodiac Generator</b></dt>
         <dd>- Coded in Python</dd>
@@ -59,10 +54,7 @@
         <dd>- Utilizes object-oriented programming, exception handling, modules, arrays</dd>
       </dl>
       <hr>
-      <h3 id="header"><i>Fun facts &#128175;:</i></h3>      
-      <p>Click here to get a random <strong>fact</strong> about me: <button style="background-color: rgba(105, 105, 105, 0.205);" onclick="addRandomFact()">&#128272;</button></p>
-      <div id="greeting-container"></div>
-      <hr>
+      
     </div>
   </body>
 </html>
