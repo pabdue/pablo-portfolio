@@ -15,7 +15,7 @@
 /**
  * Adds a random fact to the page.
  */
-function addRandomFact() {
+function getRandomFact() {
     const facts = ['I am fluent in English and Spanish.', 'I enjoy painting and creating art.', 'My favorite genres of music are: EDM, Reggaeton, & Indie', 'My first programming language was Java.'];
   
     // Pick a random greeting.

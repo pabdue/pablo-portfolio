@@ -8,7 +8,8 @@
   background-image: url('background-portfolio.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;  
+  background-size: cover;
+  padding-bottom: 50px;  
 }
 
 #greeting-container {

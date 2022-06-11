@@ -8,7 +8,7 @@
   </head>
   <body id="background"> 
     <div id="content">
-      <h1 id="header"><b>Pablo Dueñas' Portfolio:</b></h3>
+      <h1 id="header"><b>Pablo Dueñas' Portfolio:</b></h1>
       <img id="mainImage" src="pablo-photos.JPG" alt="Photos of Pablo">
       <hr>
       <h3 id="header"><i>About me</i> &#128515;:</h3>
@@ -24,14 +24,15 @@
           quality of life.</p>
       <hr>
       <h3 id="header"><i>Fun facts</i> &#128175;:</h3>      
-      <p>Click here to get a random <strong>fact</strong> about me: <button style="background-color: rgba(105, 105, 105, 0.205);" onclick="addRandomFact()">&#128272;</button></p>
-      <p> </p>
+      <p>Click here to get a random <strong>fact</strong> about me: 
+        <button style="background-color: rgba(105, 105, 105, 0.205);" onclick="addRandomFact()">&#128272;</button>
+      </p>
       <div id="greeting-container"></div>
       <p> </p>
       <hr>
       <h3 id="header"><i>Online profiles</i> &#128100;:</h3>
       <p style="text-align: center;">
-        <a href="https://www.linkedin.com/in/pduenas007/">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/pduenas007">LinkedIn</a>
         <a href="https://github.com/pabdue">GitHub</a>
       </p>
       <hr>
@@ -54,7 +55,16 @@
         <dd>- Utilizes object-oriented programming, exception handling, modules, arrays</dd>
       </dl>
       <hr>
-      
+      <h3 id="header"><i>Contact me</i> &#128233;:</h3>
+      <form action="/form-handler" method="POST">
+        <p>Enter some text here:</p>
+        <textarea name="text-input">hello world</textarea>
+        <br/>
+        <input type="submit" />
+      </form>
+      <hr>
+      <h3 id="header"><i>Saying hello</i> &#128233;:</h3>
+      <p>Click <a href="/hello">here</a> to get a <strong>greeting</strong> from me! </p>
     </div>
   </body>
 </html>
