@@ -2,8 +2,31 @@
   margin-left: auto;
   margin-right: auto;
   width: 650px;
+  font-family: Courier;
+}
+#background {
+  background-image: url('background-portfolio.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 50px;  
 }
 
 #greeting-container {
   margin-top: 20px;
+}
+
+#header {
+  background-color: rgba(105, 105, 105, 0.26); 
+  text-align: center; 
+  color: black;
+  border-radius: 15px;
+}
+#mainImage {
+  width:500px;
+  height:500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;
 }
