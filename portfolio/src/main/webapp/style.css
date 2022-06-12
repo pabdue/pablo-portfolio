@@ -12,9 +12,15 @@
   padding-bottom: 50px;  
 }
 
-#greeting-container {
+#fact-container {
   margin-top: 20px;
+  padding-bottom: 50px;
 }
+
+#greeting-container {
+    margin-top: 20px;
+    padding-bottom: 50px;
+  }
 
 #header {
   background-color: rgba(105, 105, 105, 0.26); 
