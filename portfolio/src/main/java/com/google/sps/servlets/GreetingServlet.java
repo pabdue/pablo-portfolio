@@ -14,15 +14,13 @@ public class GreetingServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    // ArrayList holds facts about myself
-    ArrayList<String> messages = new ArrayList<String>();
-    messages.add("Every year, my family and I visit Rosarito, Mexico.");
-    messages.add("My favorite movie-theater-snack is Trolli sour gummies.");
-    messages.add("To de-stress, I enjoy listening to music and painting");
-    messages.add("I enjoy looking at other people's office setups.");
+    ArrayList<String> funFacts = new ArrayList<String>();
+    funFacts.add("Every year, my family and I visit Rosarito, Mexico.");
+    funFacts.add("My favorite movie-theater-snack is Trolli sour gummies.");
+    funFacts.add("To de-stress, I enjoy listening to music and painting");
+    funFacts.add("I enjoy looking at other people's office setups.");
 
-    // Converts ArrayList into JSON
-    String json = convertToJsonUsingGson(messages);
+    String json = convertToJsonUsingGson(funFacts);
 
     // Send the JSON as the response
     response.setContentType("application/json;");
@@ -30,9 +28,9 @@ public class GreetingServlet extends HttpServlet {
   }
 
   // Function returns JSON by using Gson
-  private String convertToJsonUsingGson(ArrayList<String> messages) {
+  private String convertToJsonUsingGson(ArrayList<String> funFacts) {
     Gson gson = new Gson();
-    String json = gson.toJson(messages);
+    String json = gson.toJson(funFacts);
     return json;
   }
 }
