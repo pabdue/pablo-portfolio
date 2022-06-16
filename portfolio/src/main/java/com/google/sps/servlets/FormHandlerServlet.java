@@ -22,6 +22,6 @@ public class FormHandlerServlet extends HttpServlet {
     response.getWriter().println("You submitted: " + textValue);
     
     //redirect back to same page
-    response.sendRedirect("https://pduenas-sps-summer22.appspot.com/");
+    response.sendRedirect("https://pduenas-sps-summer22.appspot.com");
   }
 }

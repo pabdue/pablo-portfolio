@@ -18,10 +18,25 @@
 function getRandomFact() {
     const facts = ['I am fluent in English and Spanish.', 'I enjoy painting and creating art.', 'My favorite genres of music are: EDM, Reggaeton, & Indie', 'My first programming language was Java.'];
   
-    // Pick a random greeting.
+    // Pick a random fact.
     const fact = facts[Math.floor(Math.random() * facts.length)];
   
     // Add it to the page.
-    const factContainer = document.getElementById('greeting-container');
+    const factContainer = document.getElementById('fact-container');
     factContainer.innerText = fact;
   }
+
+async function displayGreeting() {
+    // Send a request to /greeting
+    const responseFromServer = await fetch('/greeting');
+
+    // Parse the response as JSON
+    const myMessages = await responseFromServer.json();
+
+    // Select random String within JSON list
+    const message = myMessages[Math.floor(Math.random() * myMessages.length)];
+  
+    // Add it to the page.
+    const greetingContainer = document.getElementById('greeting-container');
+    greetingContainer.innerText = message;
+}

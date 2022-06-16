@@ -25,10 +25,9 @@
       <hr>
       <h3 id="header"><i>Fun facts</i> &#128175;:</h3>      
       <p>Click here to get a random <strong>fact</strong> about me: 
-        <button style="background-color: rgba(105, 105, 105, 0.205);" onclick="addRandomFact()">&#128272;</button>
+        <button style="background-color: rgba(105, 105, 105, 0.205);" onclick="getRandomFact()">&#128272;</button>
       </p>
-      <div id="greeting-container"></div>
-      <p> </p>
+      <p id="fact-container"></p>
       <hr>
       <h3 id="header"><i>Online profiles</i> &#128100;:</h3>
       <p style="text-align: center;">
@@ -57,14 +56,18 @@
       <hr>
       <h3 id="header"><i>Contact me</i> &#128233;:</h3>
       <form action="/form-handler" method="POST">
-        <p>Enter some text here:</p>
-        <textarea name="text-input">hello world</textarea>
+        <p>Enter your email address:</p>
+        <textarea name="text-input">example@gmail.com</textarea>
         <br/>
         <input type="submit" />
       </form>
       <hr>
-      <h3 id="header"><i>Saying hello</i> &#128233;:</h3>
-      <p>Click <a href="/hello">here</a> to get a <strong>greeting</strong> from me! </p>
+      <h3 id="header"><i>Greetings</i> &#128075;:</h3>
+      <p>Click this button for a <strong>special</strong> message. </p>
+      <button onclick="displayGreeting();">
+          &#128172;
+      </button>
+      <p id="greeting-container"></p>
     </div>
   </body>
 </html>
