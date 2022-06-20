@@ -15,28 +15,31 @@
 /**
  * Adds a random fact to the page.
  */
-function getRandomFact() {
-    const facts = ['I am fluent in English and Spanish.', 'I enjoy painting and creating art.', 'My favorite genres of music are: EDM, Reggaeton, & Indie', 'My first programming language was Java.'];
+function getRandomSong() {
+    const songs = ['Yo Visto Así by Bad Bunny', 'The Less I Know The Better by Tame Impala', 'Dancin (feat. Luvli) Krono Remix by Aaron Smith', 
+                    'PRBLMS by 6lack', 'Neck And Neck DNMO Remix by Zeds Dead', 'No Chao Novinha by Anitta & Pedro Sampaio', 'Turn Off The Lights by Chris Lake',
+                    'Last Time by Subsonic','Imma Be by Black Eyed Peas', 'Mon Amour - Remix by zzoilo & Aitana', 'LVCC by Myke Towers', 
+                    'The Show Goes On by Lupe Fiasco', 'Rich & Sad by Post Malone', 'Are You Bored Yet?(feat. Clairo) by Wallows'];
   
     // Pick a random fact.
-    const fact = facts[Math.floor(Math.random() * facts.length)];
+    const song = songs[Math.floor(Math.random() * songs.length)];
   
     // Add it to the page.
-    const factContainer = document.getElementById('fact-container');
-    factContainer.innerText = fact;
+    const songContainer = document.getElementById('song-container');
+    songContainer.innerText = song;
   }
 
-async function displayGreeting() {
+async function displayFunFact() {
     // Send a request to /greeting
-    const responseFromServer = await fetch('/greeting');
+    const responseFromServer = await fetch('/funfacts');
 
     // Parse the response as JSON
-    const myMessages = await responseFromServer.json();
+    const myFacts = await responseFromServer.json();
 
     // Select random String within JSON list
-    const message = myMessages[Math.floor(Math.random() * myMessages.length)];
+    const fact = myFacts[Math.floor(Math.random() * myFacts.length)];
   
     // Add it to the page.
-    const greetingContainer = document.getElementById('greeting-container');
-    greetingContainer.innerText = message;
+    const funFactsContainer = document.getElementById('funfacts-container');
+    funFactsContainer.innerText = fact;
 }

@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Pablo's Portfolio</title>
+    <title>Contact me</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body class="background"> 
+  <body class="background">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <nav class="navbar navbar-dark navbar-expand-lg sticky-top navbar-custom">
       <div class="container-fluid">
@@ -34,57 +34,55 @@
       </div>
     </nav>
     <div class="container grid">
-      <div class="row justify-content-around py-5">
-        <div class="col mx-auto my-auto">
-          <div class="card shadow-lg" style="background-color: white;">
-            <h3 class="card-header">Pablo Dueñas</h3>
-            <div class="card-body">
-              <h6 class="card-title"><strong>Welcome to my Google SPS Portfolio</strong></h6>
-              <p class="card-text pt-4">
-                My name is Pablo Dueñas, I am 21 years old, and I was born and raised in Los Angeles, California. I am an undergraduate student at California State 
-                Polytechnic University, Pomona majoring in Computer Science and minoring in Data Science. Topics that interest me are: Machine learning, AI, and Software engineering.
+      <div class="row justify-content-around">
+        <div class="col py-5">
+          <div class="card shadow-lg py-auto" style="background-color: white;">
+            <h3 class="card-header" style="text-align:center;">Online profiles</h3>
+            <div class="card-body" style="text-align:center;">
+              <h6 class="card-title"><strong>Contact me through other platforms!</strong> &#128100;</h6>
+              <p class="card-text pt-2 pb-2">I am available on LinkedIn, Github, and Instagram</p>
+              <p>
+                <a href="https://www.linkedin.com/in/pduenas007">
+                  <button type="button" class="btn btn-primary" style="background-color:#0A66C2">LinkedIn</button>
+                </a>
+                <a href="https://github.com/pabdue">
+                  <button type="button" class="btn btn-dark">GitHub</button>
+                </a>
+                <a href="https://www.instagram.com/itsmepablo">
+                  <button type="button" class="btn btn-dark" style="background-color:#833ab4">Instagram</button>
+                </a>                
               </p>
             </div>
           </div>
         </div>
-        <div class="col mx-auto my-auto">
-          <img
-            src="pablo.jpg"
-            class="img-fluid shadow-lg center-img"
-            alt="Selfie of Pablo"
-          />
-        </div>
       </div>
       <hr>
       <div class="row justify-content-around">
         <div class="col py-5">
           <div class="card shadow-lg py-auto" style="background-color: white;">
-            <h3 class="card-header" style="text-align:center;">Fun facts</h3>
+            <h3 class="card-header" style="text-align:center;">Contact me</h3>
             <div class="card-body" style="text-align:center;">
-              <p class="card-text pt-2 pb-2">Get to know me! Click the button below and recieve a fun fact about me.</p>
-              <button type="button" class="btn btn-primary" onclick="displayFunFact();">&#128172;
-              </button>
-              <p id="funfacts-container"></p>
+              <h6 class="card-title pb-3"><strong><i>Send me a direct message</i></strong></h6>
+              <form action="/form-handler" method="POST">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input name="name-input" class="form-control" placeholder="John Smith">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email address</label>
+                  <input name="email-input" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea name="message-input" class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Submit</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
       <hr>
-      <div class="row justify-content-around">
-        <div class="col py-5">
-          <div class="card shadow-lg py-auto" style="background-color: white;">
-            <h3 class="card-header" style="text-align:center;">Music</h3>
-              <div class="card-body" style="text-align:center;">
-                <h6 class="card-title"><strong>Don't know what song to listen to?</strong></h6>
-                <p class="card-text pt-2 pb-2">
-                  I've got you covered. Click the button below to get a song recommendation from me &#128522;.
-                </p>
-                <button type="button" class="btn btn-primary" onclick="getRandomSong()">&#127911;</button>
-                <p id="song-container"></p>
-              </div>
-          </div>
-        </div>
-      </div>
     </div>
   </body>
 </html>
