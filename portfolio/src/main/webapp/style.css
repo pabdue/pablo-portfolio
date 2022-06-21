@@ -33,3 +33,8 @@
     margin-top: 20px;
     padding-bottom: 50px;
 }
+#map {
+    border: thin solid black;
+    height: 500px;
+    width: 500px;
+}
