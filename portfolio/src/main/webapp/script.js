@@ -45,8 +45,54 @@ async function displayFunFact() {
 }
 
 function initMap() {
+  const griffith = { lat: 34.118627, lng: -118.300647 };
+  const chicken = { lat: 33.944714, lng: -118.119215 };
+  const callejones = { lat: 34.038584, lng: -118.254545 };
+  const university = { lat: 34.058787, lng: -117.824789 };
+  const arboretum = { lat: 34.143604, lng: -118.051205 };
+  const bell = { lat: 33.709580, lng: -118.293827 };
+  const beach = { lat: 34.038030, lng: -118.874691 };  
+
   map = new google.maps.Map(
   document.getElementById("map"), {
-      center: { lat: 34.0522, lng: -118.2437 }, 
-      zoom: 8,});
+      center: { lat: 33.960196, lng: -118.238880 }, 
+      zoom: 10,
+      mapId: '1ab2970b54ebfa1f'});
+
+  const blueIcon = "http://maps.google.com/mapfiles/ms/icons/blue-pushpin.png"
+
+  const griffithMarker = new google.maps.Marker({
+    position: griffith,
+    map: map,
+    icon: blueIcon});
+
+  const chickenMarker = new google.maps.Marker({
+    position: chicken,
+    map: map,
+    icon: blueIcon});
+
+  const callejonesMarker = new google.maps.Marker({
+    position: callejones,
+    map: map,
+    icon: blueIcon});
+
+  const universityMarker = new google.maps.Marker({
+    position: university,
+    map: map,
+    icon: blueIcon});
+
+  const arboretumMarker = new google.maps.Marker({
+    position: arboretum,
+    map: map,
+    icon: blueIcon});
+
+  const bellMarker = new google.maps.Marker({
+    position: bell,
+    map: map,
+    icon: blueIcon});
+
+  const beachMarker = new google.maps.Marker({
+    position: beach,
+    map: map,
+    icon: blueIcon});
 }
