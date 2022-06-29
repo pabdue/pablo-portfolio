@@ -30,7 +30,6 @@ function getRandomSong() {
   }
 
 async function displayFunFact() {
-    // Send a request to /greeting
     const responseFromServer = await fetch('/funfacts');
 
     // Parse the response as JSON
@@ -64,35 +63,43 @@ function initMap() {
   const griffithMarker = new google.maps.Marker({
     position: griffith,
     map: map,
-    icon: blueIcon});
+    icon: blueIcon,
+    title: "Griffith Observatory"});
 
   const chickenMarker = new google.maps.Marker({
     position: chicken,
     map: map,
-    icon: blueIcon});
+    icon: blueIcon,
+    title: "Crimson Coward Nashville Hot Chicken"});
 
   const callejonesMarker = new google.maps.Marker({
     position: callejones,
     map: map,
-    icon: blueIcon});
+    icon: blueIcon,
+    title: "The Santee Alley"});
 
   const universityMarker = new google.maps.Marker({
     position: university,
     map: map,
-    icon: blueIcon});
+    icon: blueIcon,
+    title: "Cal Poly Pomona"});
 
   const arboretumMarker = new google.maps.Marker({
     position: arboretum,
     map: map,
-    icon: blueIcon});
+    icon: blueIcon,
+    title: "Los Angeles County Arboretum"});
 
   const bellMarker = new google.maps.Marker({
     position: bell,
     map: map,
-    icon: blueIcon});
+    icon: blueIcon,
+    title: "Korean Friendship Bell"});
 
   const beachMarker = new google.maps.Marker({
     position: beach,
     map: map,
-    icon: blueIcon});
+    icon: blueIcon,
+    title: "El Matador Beach"});
+
 }
