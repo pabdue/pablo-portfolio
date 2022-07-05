@@ -1,7 +1,7 @@
 .background {
     background-color: #99BEE3;
     font-family: Courier;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
 }
 
 .navbar-custom {
@@ -36,5 +36,5 @@
 #map {
     border: thin solid black;
     height: 500px;
-    width: 500px;
+    width: 100%;
 }

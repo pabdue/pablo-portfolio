@@ -27,7 +27,6 @@ public class FormHandlerServlet extends HttpServlet {
     response.getWriter().println("Email: " + email);
     response.getWriter().println("Message: " + message);
     
-    //redirect back to same page
     response.sendRedirect("https://pduenas-sps-summer22.appspot.com/contact.html");
   }
 }
